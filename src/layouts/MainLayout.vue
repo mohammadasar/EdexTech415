@@ -40,7 +40,7 @@
               </q-item-section>
 
               <q-item-section>
-               Home
+               <a href="#/EnquiryForm">Home</a>
               </q-item-section>
             </q-item>
 

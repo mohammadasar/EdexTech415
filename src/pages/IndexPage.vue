@@ -46,7 +46,7 @@
 <!-- </q-page> -->
 
   
-  <EnquiryForm></EnquiryForm>
+  <EnquiryForm :is="currentView" ></EnquiryForm>
   <Choose></Choose>
   <Wedo></Wedo>
   <!-- <Facilitys></Facilitys> -->
@@ -68,7 +68,9 @@ import SbiExams from '../components/SbiExams.vue'
 import RbiExams from '../components/RbiExams.vue'
 import IbpsExams from '../components/IbpsExams.vue'
 import Footer from '../components/Footer.vue'
-import { ref } from 'vue'
+import { ref,computed } from 'vue'
+
+
 
 export default defineComponent({
   name: 'IndexPage',
@@ -97,5 +99,20 @@ export default defineComponent({
     }
   }
 
+})
+
+const routes = {
+  // '/': Home,
+  '/EnquiryForm': EnquiryForm
+}
+
+const currentPath = ref(window.location.hash)
+
+window.addEventListener('hashchange', () => {
+  currentPath.value = window.location.hash
+})
+
+const currentView = computed(() => {
+  return routes[currentPath.value.slice(1) || '/'] || NotFound
 })
 </script>
