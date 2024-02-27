@@ -1,5 +1,5 @@
 <template>
-    <div class="row" style="background-color:black; color:purple">
+    <div class="row" id="Footer" style="background-color:black; color:purple">
         <div class="col-12 col-md  q-pa-md"> 
             <div class="text-h5 text-weight-bold q-pa-md " ><p class="q-pb-sm" style="border-bottom: 4px solid purple;  border-radius: 10px;">EXAMSDAILY</p></div>
             <div class="q-pa-md">

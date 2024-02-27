@@ -1,5 +1,5 @@
 <template>
-      <div class="q-pa-md" style="max-width:100% ; background-color: #cccccc;">
+      <div class="q-pa-md" id="EnquiryForm" style="max-width:100% ; background-color: #cccccc;">
    
         <!-- <div class="row"> -->
      <div class=" text-center q-mt-md ">

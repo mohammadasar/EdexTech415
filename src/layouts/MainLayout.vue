@@ -8,9 +8,9 @@
           ExamsDaily
         </q-toolbar-title>   
         <div class="text-weight-bold gt-sm ">
-          <q-btn flat rounded color="gray-1" label="Home" />
-          <q-btn flat rounded color="gray-1" label="Enquiry" href="#EnqiryForm" />
-          <q-btn flat rounded color="gray-1" label="Contact Us" />
+          <q-btn flat rounded color="gray-1" label="Home" @click="scrollToSection('Offer')" />
+          <q-btn flat rounded color="gray-1" label="Enquiry" @click="scrollToSection('EnquiryForm')" />
+          <q-btn flat rounded color="gray-1" label="Contact Us" @click="scrollToSection('Footer')" />
         </div>
         <!-- <q-btn flat round dense icon="menu" class="q-mr-sm lt-md" /> -->
         <q-btn flat @click="drawerRight = !drawerRight" round dense icon="menu"  class="q-mr-sm lt-md"/>
@@ -100,6 +100,17 @@ export default defineComponent({
     return {
       drawerRight: ref(false),
       miniState: ref(true)
+    }
+  },
+  methods: {
+    scrollToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: 'smooth'
+        });
+      }
     }
   }
 

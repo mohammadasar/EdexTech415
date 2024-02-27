@@ -46,7 +46,7 @@
 <!-- </q-page> -->
 
   
-  <EnquiryForm id="EnqiryForm" ></EnquiryForm>
+  <EnquiryForm ></EnquiryForm>
   <Choose></Choose>
   <Wedo></Wedo>
   <!-- <Facilitys></Facilitys> -->
