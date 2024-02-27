@@ -9,7 +9,7 @@
         </q-toolbar-title>   
         <div class="text-weight-bold gt-sm ">
           <q-btn flat rounded color="gray-1" label="Home" />
-          <q-btn flat rounded color="gray-1" label="Enquiry" />
+          <q-btn flat rounded color="gray-1" label="Enquiry" href="#EnqiryForm" />
           <q-btn flat rounded color="gray-1" label="Contact Us" />
         </div>
         <!-- <q-btn flat round dense icon="menu" class="q-mr-sm lt-md" /> -->
@@ -40,7 +40,7 @@
               </q-item-section>
 
               <q-item-section>
-               <a href="#/EnquiryForm">Home</a>
+               Home
               </q-item-section>
             </q-item>
 
